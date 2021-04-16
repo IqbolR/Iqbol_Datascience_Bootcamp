@@ -1,0 +1,30 @@
+select *
+from public.search_ad_campaigns sac 
+
+
+select distinct metro_city
+from public.census_metro_data cmd
+
+select distinct platform_id 
+from public.search_ad_data sad 
+limit 2
+
+select round(sum(cost))  
+from public.search_ad_data sad 
+
+
+select state, count(zip)
+from public.census_metro_data cmd 
+where median_hh_income >=200000
+group by 1
+
+select state, max(zip)
+from public.census_metro_data cmd 
+where median_hh_income >=100000
+group by 1
+
+select state, zip
+from public.census_metro_data cmd 
+where median_hh_income >=100000
+and zip<=3000
+group by 1
