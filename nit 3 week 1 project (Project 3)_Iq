@@ -37,7 +37,7 @@ where zip > 0 and metro_city in ('New York', 'Los Angeles', 'Chicago', 'Houston'
 group by 1,2
 order by 1
 	
-	---- Answer: Google sheet chart_
+	---- Answer: Excel file sheet chart_attched
 	
 
 ---- 3. For those metro areas, what does the spread of student % look like?
@@ -51,7 +51,7 @@ from (select metro_city, ((population_age_5_9 + population_age_10_14 + populatio
 group by 1,2
 order by 1,2
 
----- Answer: Google sheet chart_
+---- Answer: Excel file sheet chart_attched
 
 
 
@@ -74,4 +74,4 @@ from (select metro_city, zip, population, round((population_age_5_9+population_a
 population.metro_city=income.metro_city and population.zip=income.zip) base_query
 where overall_rank <6
 
------- Answer: Google sheet chart_
+------ Answer: Excel file sheet chart_attched
