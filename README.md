@@ -1,2 +1,2 @@
 # Iqbol_Datascience_Bootcamp
-This is my Data science Bootcamp repository.
+This is my Data Science Bootcamp repository.
